@@ -376,19 +376,57 @@ position:relative;
 	text-transform: capitalize;
 	font-weight: 500;
 }
-.basic-info{margin-top:30px;position:relative;}
-.basic-info{}
+.basic-info{
+	margin-top:30px;
+	position:relative;
+	margin-left: -450px;
+}
+@media (max-width: 992px) {
+    .basic-info {
+        margin-left: 0; /* Remove negative margin */
+        padding: 15px;
+        text-align: center; /* Centers text if needed */
+    }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .basic-info {
+        margin-left: 0;
+        padding: 10px;
+        text-align: center;
+        width: 100%; /* Makes it take full width */
+    }
+}
+
 .single-basic-info {
 	display: inline-block;
 	font-size: 14px;
 	padding: 10px 0;
 	width: 175px;
 }
-.single-basic-info p {font-size:14px;}
-.single-basic-info p span {
-	color: #fff;
-	font-size:16px
+
+.single-basic-info a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
+
+.single-basic-info i {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #ffcc00; /* Highlight color */
+    transition: 0.3s;
+}
+
+.single-basic-info a:hover i {
+    color: #595bcf; /* Change color on hover */
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 03. END HOMEPAGE CSS STYLE
@@ -570,82 +608,107 @@ border-right:0px;
 * ----------------------------------------------------------------------------------------
 */
 
-.section-padding {
-    padding: 50px 0;
+/* Technology Stack Section */
+#tech-stack {
+    background-color: #0d0d0d; /* Dark background */
+    padding: 60px 0;
+    text-align: center;
 }
 
+/* Section Title */
 .section-title h1 {
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
 }
 
-/* Skills Section Filter */
-.filter-menu, .techstack-filter-menu {
+/* Filter Menu */
+.techstack-filter-menu {
     list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    padding: 0;
-    gap: 10px;
-}
-
-.filter-menu .filter,
-.techstack-filter-menu .techstack-filter {
-    cursor: pointer;
-    padding: 8px 16px;
-    background: #444;
-    color: white;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.filter-menu .filter.active,
-.techstack-filter-menu .techstack-filter.active {
-    background: #f4a261;
-    color: black;
-}
-
-.techstack-content {
-    display: flex;
     flex-wrap: wrap;
+    gap: 15px;
+}
+
+.techstack-filter-menu li {
+    background: #ff914d;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.techstack-filter-menu li:hover,
+.techstack-filter-menu .active {
+    background: #d4703a;
+}
+
+/* Tech Stack Grid */
+.techstack-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Adjust spacing between items */
-    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.techstack-content .col-lg-4, 
-.techstack-content .col-sm-6, 
-.techstack-content .col-xs-12 {
+/* Tech Stack Items */
+.techstack-content .tech-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 15px;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-icon1 {
-    font-size: 3rem; /* Adjust icon size */
-    color: #333; /* Icon color */
+.techstack-content .tech-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Icons */
+.techstack-content .tech-item img {
+    max-width: 100px;
+    height: auto;
+    display: block;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
-h3.title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #444; /* Text color */
+.techstack-content .tech-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Tech Item Text */
+.techstack-content .tech-item p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 5px 0 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .techstack-content {
-        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
-    
-    .techstack-content .col-lg-4,
-    .techstack-content .col-sm-6,
-    .techstack-content .col-xs-12 {
-        width: 100%; /* Stack elements on smaller screens */
+}
+
+@media (max-width: 480px) {
+    .techstack-content {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -833,7 +896,7 @@ position:relative;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	border-radius: 30px;
-	font-weight: ;
+	
 }
  .box .icon li a:hover{
      color: #fff;
@@ -902,54 +965,223 @@ width: 600px;
 * 08. START RESUME PAGE DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.resume_area{padding-bottom:50px;}
+/* Resume Area - General Styling */
+/* Resume Area - Flexbox Layout *//* Resume Area - Flex Layout */
+.resume_area {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px; /* Increased gap for better spacing */
+    padding-bottom: 50px;
+    align-items: stretch;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Resume Card Styling */
+.resume-card {
+    background: #222; /* Dark background */
+    padding: 50px; /* Slightly increased padding */
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px; /* Ensures uniform height */
+    height: 100%;
+    color: #fff; /* White text for contrast */
+}
+.resume-card1 {
+    background: #222; /* Dark background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px; /* Ensures uniform height */
+    height: 100%;
+    color: #fff; /* White text for contrast */
+    margin-bottom: 40px; /* 👈 Adds space below each resume card */
+    margin-top: 20px; /* 👈 Adds space above */
+    padding: 40px; /* 👈 Adjusted padding */
+}
+
+
+/* Hover Effect */
+.resume-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0px 6px 25px rgba(96, 52, 192, 0.7);
+}
+
+/* Timeline Title */
 .timeline_title {
-	text-transform: capitalize;
-	font-size:30px;
-	font-weight: 600;
-	margin-bottom:30px;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 8px;
 }
+
+/* Underline Effect for Titles */
 .timeline_title::after {
-	content: "";
-	background: -o-radial-gradient(left,ellipse,#ddd 0%,rgba(255,255,255,0) 70%);
-	background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
-	width: 200px;
-	height: 2px;
-	display: block;
-	margin-top: 5px;
+    content: "";
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #ffcc00, transparent);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+/* Single Timeline Entry */
 .single_timeline {
-	padding-right: 20px;
-	margin-bottom: 40px;
-	position: relative;
-	z-index: 1;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+    padding-right: 15px;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
 }
-.single_timeline_mbnone{margin-bottom:0px;}
+
+/* Last Entry - Remove Margin */
+.single_timeline_mbnone {
+    margin-bottom: 0px;
+}
+
+/* Timeline Title & Year Row */
+.title_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Heading inside Timeline */
 .single_timeline h4 {
-	font-weight: 600;
-	font-size: 22px;
-	margin-bottom:25px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #ffcc00; /* Highlight color */
 }
-.single_timeline span {
-	margin-bottom: 10px;
-	display: inline-block;
-	font-weight: 600;
-	color: #fff;
-}
+
+/* Active Year */
 .active_year {
-	color: #fff;
-	font-weight: 500;
-	border: 2px solid #f0bb62;
-	padding: 0px 10px;
-	border-radius: 2px;
+    color: #fff;
+    font-weight: 500;
+    border: 2px solid #595bcf;
+    padding: 4px 12px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 14px;
 }
+
+/* Active Company */
 .active_company {
-	font-weight: 500;
+    font-weight: 500;
+    color: #bbb; /* Light gray for company names */
+    display: block;
+    margin-bottom: 10px;
 }
-.single_timeline p{}
+
+/* Paragraph (Description) */
+.single_timeline p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Achievements Section */
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Two-row structure for achievements */
+.achievements-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Each achievement entry */
+.achievements-row .single_timeline {
+    flex: 1 1 calc(50% - 10px); /* Ensures two items per row */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .resume_area {
+        flex-direction: column;
+    }
+
+    .resume-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .timeline_title {
+        font-size: 24px;
+    }
+
+    .achievements-row {
+        flex-direction: column;
+    }
+
+    .achievements-row .single_timeline {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-card {
+        padding: 20px;
+    }
+
+    .timeline_title {
+        font-size: 22px;
+    }
+
+    .single_timeline h4 {
+        font-size: 18px;
+    }
+
+    .active_year {
+        font-size: 13px;
+        padding: 3px 10px;
+    }
+
+    .single_timeline p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-card {
+        padding: 15px;
+    }
+
+    .timeline_title {
+        font-size: 20px;
+    }
+
+    .single_timeline h4 {
+        font-size: 16px;
+    }
+
+    .active_year {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    .single_timeline p {
+        font-size: 13px;
+    }
+}
+
+
 /*
 * ----------------------------------------------------------------------------------------
 * 08. END RESUME PAGE DESIGN

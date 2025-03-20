@@ -14,8 +14,10 @@
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">	
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+		 <!--EMAILJS-->
+	    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-	
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -84,20 +86,26 @@
 						<h1 class="typewrite" data-period="2000" data-type='[ "FULL STACK DEVELOPER"]'>
 						<span class="wrap"></span></h1>	
 					</div>
-					<div class="basic-info">
+					<div class="basic-info text-center">
 						<div class="single-basic-info">
-							<p>Email: <br /><span>info@example.com</span></p>
+							<a href="mailto:info@example.com" target="_blank">
+								<i class="fas fa-envelope"></i>
+								<span>Email</span>
+							</a>
 						</div>
 						<div class="single-basic-info">
-							<p>Phone: <br /><span>+456 789 321</span></p>
+							<a href="https://github.com/your-github" target="_blank">
+								<i class="fab fa-github"></i>
+								<span>GitHub</span>
+							</a>
 						</div>
 						<div class="single-basic-info">
-							<p>Address: <br /><span>New Winchester</span></p>
+							<a href="https://www.linkedin.com/in/your-linkedin" target="_blank">
+								<i class="fab fa-linkedin"></i>
+								<span>LinkedIn</span>
+							</a>
 						</div>
-						<div class="single-basic-info">
-							<p>Nationality: <br /><span>USA</span></p>
-						</div>				
-					</div>
+					</div>					
 				</div><!-- END COL-->  
 			</div><!--- END ROW -->			
 		</div><!--- END CONTAINER -->
@@ -225,7 +233,7 @@
 
 	<!--START TECH STACK-->
 	<section id="tech-stack" class="tech_stack_area section-padding">
-		<div class="container">
+		<div class="container1">
 			<div class="section-title text-center">
 				<h1>Technology Stack</h1>
 			</div>
@@ -235,15 +243,15 @@
 				<div class="col-lg-12 text-center">
 					<ul class="techstack-filter-menu">
 						<li class="techstack-filter active" data-filter="all">All</li>
-						<li class="techstack-filter" data-filter=".tech-frontend">Frontend Development</li>
-						<li class="techstack-filter" data-filter=".tech-backend">Backend Development</li>
-						<li class="techstack-filter" data-filter=".tech-database">Database Management</li>
-						<li class="techstack-filter" data-filter=".tech-programming">Programming Languages</li>
-						<li class="techstack-filter" data-filter=".tech-data-science">Data Science & Analytics</li>
-						<li class="techstack-filter" data-filter=".tech-version-control">Version Control & Collaboration</li>
-						<li class="techstack-filter" data-filter=".tech-testing">Development & Testing Tools</li>
-						<li class="techstack-filter" data-filter=".tech-design">Design & Project Management</li>
-					</ul>                    
+						<li class="techstack-filter" data-filter=".tech-frontend">Frontend</li>
+						<li class="techstack-filter" data-filter=".tech-backend">Backend</li>
+						<li class="techstack-filter" data-filter=".tech-database">Database</li>
+						<li class="techstack-filter" data-filter=".tech-programming">Languages</li>
+						<li class="techstack-filter" data-filter=".tech-data-science">Data Science</li>
+						<li class="techstack-filter" data-filter=".tech-version-control">Version Control</li>
+						<li class="techstack-filter" data-filter=".tech-testing">Testing</li>
+						<li class="techstack-filter" data-filter=".tech-design">Design & PM</li>
+           			</ul>                    
 				</div>
 			</div>
 	
@@ -253,74 +261,76 @@
 				<!-- Frontend Development -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-frontend">
 					<div class="service-icon1">
-						<img src="assets/img/1.svg">
-					</div>
+						<img src="assets/img/1.svg" alt="HTML5 Icon" width="150" height="50">
+					</div>					
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-frontend">
-					<div class="service-icon1"><img src="assets/img/css3.svg" alt="CSS3"></div>
-					<h3 class="title">CSS3</h3>
+					<div class="service-icon1"><img src="assets/img/CSS3.svg" alt="CSS3" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-frontend">
-					<div class="service-icon1"><img src="assets/img/react.svg" alt="React.js"></div>
+					<div class="service-icon1"><img src="assets/img/javascript.svg" alt="javascript" width="150" height="50"></div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-frontend">
+					<div class="service-icon1"><img src="assets/img/React.svg" alt="React.js" width="150" height="50"></div>
 				</div>
 			
 				<!-- Backend Development -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-backend">
-					<div class="service-icon1"><img src="assets/img/nodejs.svg" alt="Node.js"></div>
+					<div class="service-icon1"><img src="assets/img/Node.svg" alt="Node.js" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-backend">
-					<div class="service-icon1"><img src="assets/img/express.svg" alt="Express.js"></div>
+					<div class="service-icon1"><img src="assets/img/Express.svg" alt="Express.js" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-backend">
-					<div class="service-icon1"><img src="assets/img/restapi.svg" alt="REST APIs"></div>
+					<div class="service-icon1"><img src="assets/img/restapi.svg" alt="REST APIs" width="150" height="50"></div>
 				</div>
 			
 				<!-- Database Management -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-database">
-					<div class="service-icon1"><img src="assets/img/mongodb.svg" alt="MongoDB"></div>
+					<div class="service-icon1"><img src="assets/img/MongoDB.svg" alt="MongoDB" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-database">
-					<div class="service-icon1"><img src="assets/img/mysql.svg" alt="MySQL"></div>
+					<div class="service-icon1"><img src="assets/img/MySQL.svg" alt="MySQL" width="150" height="50"></div>
 				</div>
 			
 				<!-- Programming Languages -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-programming">
-					<div class="service-icon1"><img src="assets/img/python.svg" alt="Python"></div>
+					<div class="service-icon1"><img src="assets/img/Python.svg" alt="Python" width="150" height="50"></div>
 				</div>
 			
 				<!-- Data Science & Analytics -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-data-science">
-					<div class="service-icon1"><img src="assets/img/pandas.svg" alt="Pandas"></div>
+					<div class="service-icon1"><img src="assets/img/Pandas.svg" alt="Pandas" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-data-science">
-					<div class="service-icon1"><img src="assets/img/numpy.svg" alt="NumPy"></div>
+					<div class="service-icon1"><img src="assets/img/numpy.svg" alt="NumPy" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-data-science">
-					<div class="service-icon1"><img src="assets/img/matplotlib.svg" alt="Matplotlib"></div>
+					<div class="service-icon1"><img src="assets/img/matplotlib.svg" alt="Matplotlib" width="150" height="50"></div>
 				</div>
 			
 				<!-- Version Control & Collaboration -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-version-control">
-					<div class="service-icon1"><img src="assets/img/git.svg" alt="Git"></div>
+					<div class="service-icon1"><img src="assets/img/git.svg" alt="Git" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-version-control">
-					<div class="service-icon1"><img src="assets/img/github.svg" alt="GitHub"></div>
+					<div class="service-icon1"><img src="assets/img/github.svg" alt="GitHub" width="150" height="50"></div>
 				</div>
 			
 				<!-- Development & Testing Tools -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-testing">
-					<div class="service-icon1"><img src="assets/img/postman.svg" alt="Postman"></div>
+					<div class="service-icon1"><img src="assets/img/postman.svg" alt="Postman" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-testing">
-					<div class="service-icon1"><img src="assets/img/vscode.svg" alt="VS Code"></div>
+					<div class="service-icon1"><img src="assets/img/vscode.jpg" alt="VS Code" width="150" height="50"></div>
 				</div>
 			
 				<!-- Design & Project Management -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-design">
-					<div class="service-icon1"><img src="assets/img/canva.svg" alt="Canva"></div>
+					<div class="service-icon1"><img src="assets/img/canva.jpg" alt="Canva" width="150" height="50"></div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-design">
-					<div class="service-icon1"><img src="assets/img/agile.svg" alt="Agile Methodology"></div>
+					<div class="service-icon1"><img src="assets/img/agile.svg" alt="Agile Methodology" width="150" height="50"></div>
 				</div>
 			
 			</div>
@@ -359,11 +369,9 @@
 						<img src="assets/img/portfolio/1.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">responsive education website</h3>
-							<span class="post">Branding , Design</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/1.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->
@@ -372,11 +380,9 @@
 						<img src="assets/img/portfolio/2.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">falvours of gastronomy responsive ui</h3>
-							<span class="post">Website, logo</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/2.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->
@@ -385,11 +391,9 @@
 						<img src="assets/img/portfolio/3.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">ArtiZen blog website</h3>
-							<span class="post">logo,graphics</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/3.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->
@@ -398,11 +402,9 @@
 						<img src="assets/img/portfolio/4.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">AgronomyNet</h3>
-							<span class="post">Design, Web</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/4.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->
@@ -411,11 +413,9 @@
 						<img src="assets/img/portfolio/5.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">Space Invaders python game</h3>
-							<span class="post">Video, print</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/5.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->
@@ -424,11 +424,9 @@
 						<img src="assets/img/portfolio/6.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">NewsApp using News api</h3>
-							<span class="post">social, media</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/6.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->	
@@ -437,11 +435,9 @@
 						<img src="assets/img/portfolio/7.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">MovieBookingApp</h3>
-							<span class="post">logo, graphics</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/7.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->
@@ -450,11 +446,9 @@
 						<img src="assets/img/portfolio/8.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">Foodie Heaven</h3>
-							<span class="post">Portfolio, Personal</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/8.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->
@@ -463,11 +457,9 @@
 						<img src="assets/img/portfolio/9.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">EcoTrack</h3>
-							<span class="post">logo, design</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/9.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->	
@@ -476,11 +468,9 @@
 						<img src="assets/img/portfolio/9.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">Authentication with Node</h3>
-							<span class="post">logo, design</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/9.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->	
@@ -489,11 +479,9 @@
 						<img src="assets/img/portfolio/9.jpg" alt="">
 						<div class="box-content">
 							<h3 class="title">React Responsive UI</h3>
-							<span class="post">logo, design</span>
 						</div>
 						<ul class="icon">
 							<li><a href="assets/img/portfolio/9.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
-							<li><a href="single_project_dark.html" target="_blank"><i class="fa fa-link"></i></a></li>
 						</ul>
 					</div>
 				</div><!--- END COL -->				
@@ -506,58 +494,134 @@
 	<section id="resume" class="resume_area section-padding">
 		<div class="container">
 			<div class="section-title text-center">
-				<h1>Career Highlights & Achievements</h1>
-			</div>			
-			<div class="row">					
-				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
-					<h4 class="timeline_title">Education</h4>
-					<div class="single_timeline">
-						<h4>Undergraduate</h4>
-						<span class="active_year">2021 - 2025</span>
-						<span class="active_company">- Bachelor of Engineering (B.E.) – Computer Science & Engineering</span>
-						<p>Nadar Saraswathi College of Engineering and Technology</p>
+				<h1>Resume</h1>
+			</div>
+	
+			<!-- Row with Two Equal Columns (Education & Experience) -->
+			<div class="row">
+				<!-- Education Column -->
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="resume-card">
+						<h4 class="timeline_title">Education</h4>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>10th Grade</h4>
+								<span class="active_year">2019</span>
+							</div>
+							<span class="active_company">- Nadar Saraswathi Girls Higher Secondary School, Theni</span>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>11th & 12th Grade</h4>
+								<span class="active_year">2021</span>
+							</div>
+							<span class="active_company">- Nadar Saraswathi Girls Higher Secondary School, Theni</span>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Bachelor of Engineering</h4>
+								<span class="active_year">2025</span>
+							</div>
+							<span class="active_company">- Nadar Saraswathi College of Engineering and Technology</span>
+							<p>Computer Science & Engineering</p>
+						</div>                        
 					</div>
-					<div class="single_timeline">
-						<h4>Higher Secondary School</h4>
-						<span class="active_year">2020 - 2021</span>
-						<span class="active_company">- 12th Grade</span>
-						<p>Nadar Saraswathi Girls Higher Secondary School, Theni</p>
+				</div>
+	
+				<!-- Experience Column -->
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="resume-card">
+						<h4 class="timeline_title">Work Experience</h4>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Software Trainee</h4>
+								<span class="active_year">2025</span>
+							</div>
+							<span class="active_company">- Navi Promotions, Theni</span>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Backend Developer & Team Lead</h4>
+								<span class="active_year">2024</span>
+							</div>
+							<span class="active_company">- ParkQwik Private Limited, Chennai</span>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Full Stack Web Developer</h4>
+								<span class="active_year">2023</span>
+							</div>
+							<span class="active_company">- Computira Soft Solutions, Trichy</span>
+						</div>                        
 					</div>
-					<div class="single_timeline">
-						<h4>High School</h4>
-						<span class="active_year">2018 - 2019</span>
-						<span class="active_company">- 10th Grade</span>
-						<p>Nadar Saraswathi Girls Higher Secondary School, Theni</p>
-					</div>						
-				</div><!--END COL -->
-				<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
-				<h4 class="timeline_title">Experience</h4>
-					<div class="single_timeline">
-						<h4>Software Trainee </h4>
-						<span class="active_year">2025</span>
-						<span class="active_company">- Navi Promotions</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium  consectetur.</p>
+				</div>
+			</div><!-- / END First Row -->
+	
+			<!-- Row for Achievements (Single Column) -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="resume-card1">
+						<h4 class="timeline_title">Achievements</h4>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Winner - SIH 2023</h4>
+								<span class="active_year">2023</span>
+							</div>
+							<p>Winner of Smart India Hackathon (National Level) under the Ministry of Environment.</p>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Dr. Kalam Young Achiever Award</h4>
+								<span class="active_year">2024</span>
+							</div>
+							<p>Recipient of the prestigious Dr. Kalam Young Achiever Award 2024.</p>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Research Paper & Conference</h4>
+								<span class="active_year">2023</span>
+							</div>
+							<p>Presented a research paper on AI & ML applications in healthcare.</p>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>Blockchain-based REC Project</h4>
+								<span class="active_year">2024</span>
+							</div>
+							<p>Developed a blockchain-based REC concept project for PLI Hackathon 2.0.</p>
+						</div>
+	
+						<div class="single_timeline">
+							<div class="title_row">
+								<h4>API Hackathon</h4>
+								<span class="active_year">2023</span>
+							</div>
+							<p>Successfully completed an API development challenge in the Postman API Hackathon.</p>
+						</div>
 					</div>
-					<div class="single_timeline">
-						<h4>Backend Developer & Team Lead</h4>
-						<span class="active_year">2024</span>
-						<span class="active_company">-  ParkQwik Private Limited, Chennai</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium  consectetur.</p>
-					</div>
-					<div class="single_timeline single_timeline_mbnone">
-						<h4>Full Stack Web Developer</h4>
-						<span class="active_year">2023</span>
-						<span class="active_company">- Computira Soft Solutions</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusantium  consectetur.</p>
-					</div>						
-				</div><!--END COL -->									
-			</div><!-- / END ROW -->
-		</div><!-- END CONTAINER  -->
-	</section>	
+				</div>
+			</div><!-- / END Achievements Row -->
+	
+		</div><!-- END CONTAINER -->
+	</section>
+	
+	
+	
+	
 	<!-- END RESUME -->		
 	
 	<!-- START TEAM -->
-	<section id="team" class="our_team section-padding">
+	<!-- <section id="team" class="our_team section-padding">
 	   <div class="container">
 			<div class="section-title text-center">
 				<h1>Team Showcase</h1>
@@ -577,8 +641,9 @@
 							</ul>
 						</div>
 					</div>
-				</div><!-- END COL -->
-				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+				</div> -->
+				<!-- END COL -->
+				<!-- <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="single-team">
 						<div class="img"><img src="assets/img/team/team2.jpg" class="img-fluid" alt=""></div>
 						<div class="team-content">
@@ -591,8 +656,9 @@
 							</ul>
 						</div>
 					</div>
-				</div><!-- END COL -->
-				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+				</div> -->
+				<!-- END COL -->
+				<!-- <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 					<div class="single-team">
 						<div class="img"><img src="assets/img/team/team3.jpg" class="img-fluid" alt=""></div>
 						<div class="team-content">
@@ -605,8 +671,9 @@
 							</ul>
 						</div>
 					</div>
-				</div><!-- END COL -->
-				<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+				</div> -->
+				<!-- END COL -->
+				<!-- <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
 					<div class="single-team">
 						<div class="img"><img src="assets/img/team/team4.jpg" class="img-fluid" alt=""></div>
 						<div class="team-content">
@@ -619,14 +686,17 @@
 							</ul>
 						</div>
 					</div>
-				</div><!-- END COL -->				
-			</div><!-- END ROW -->
-		</div><!-- END CONTAINER -->
-	</section>
+				</div> -->
+				<!-- END COL -->				
+			<!-- </div> -->
+			<!-- END ROW -->
+		<!-- </div> -->
+		<!-- END CONTAINER -->
+	<!-- </section> -->
 	<!-- END TEAM -->	
 
 	<!-- START BLOG -->
-	<section id="blog" class="blog_area section-padding">
+	<!-- <section id="blog" class="blog_area section-padding">
 		<div class="container">
 			<div class="section-title text-center">
 				<h1>Latest blogs</h1>
@@ -645,8 +715,9 @@
 							<a href="single_blog.html">Continue Reading -</a>
 						</div>
 					</div>
-				</div><!-- END COL-->
-				<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+				</div> -->
+				<!-- END COL-->
+				<!-- <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="single_blog">
 						<div class="blog-img">
 							<img src="assets/img/blog/2.jpg" class="img-fluid" alt="image" />
@@ -658,8 +729,9 @@
 							<a href="single_blog.html">Continue Reading -</a>
 						</div>
 					</div>
-				</div><!-- END COL-->
-				<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+				</div> -->
+				<!-- END COL-->
+				<!-- <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 					<div class="single_blog">
 						<div class="blog-img">
 							<img src="assets/img/blog/3.jpg" class="img-fluid" alt="image" />
@@ -671,10 +743,13 @@
 							<a href="single_blog.html">Continue Reading -</a>
 						</div>
 					</div>
-				</div><!-- END COL-->						
-			</div><!-- / END ROW -->
-		</div><!-- END CONTAINER  -->
-	</section>	
+				</div> -->
+				<!-- END COL-->						
+			<!-- </div> -->
+			<!-- / END ROW -->
+		<!-- </div> -->
+		<!-- END CONTAINER  -->
+	<!-- </section>	 -->
 	<!-- END BLOG -->
 	
 	<!-- START CONTACT -->
@@ -682,64 +757,81 @@
 		<div class="container">
 		<div class="section-title text-center">
 			<h1>Write Your Message</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 		</div>				
 			<div class="row">
 				<div class="col-lg-8 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
 					<div class="contact">
-						<form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
+						<form id="contact-form">
 							<div class="row">
 								<div class="form-group col-md-6">
-									<input type="text" name="name" class="form-control" placeholder="Name" required="required">
+									<input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
 								</div>
 								<div class="form-group col-md-6">
-									<input type="email" name="email" class="form-control" placeholder="Email" required="required">
+									<input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
 								</div>
 								<div class="form-group col-md-12">
-									<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+									<input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
 								</div>
 								<div class="form-group col-md-12">
-									<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+									<textarea rows="6" id="message" name="message" class="form-control" placeholder="Your Message" required></textarea>
 								</div>
 								<div class="col-md-12 text-center">
-									<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-lg contact_btn" title="Submit Your Message!">Touch here</button>
+									<button type="submit" id="submitButton" class="btn btn-lg contact_btn">Submit</button>
 								</div>
 							</div>
 						</form>
 					</div>
-				</div><!-- END COL  -->	
-				<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">	
-					<div class="address_bg">
-						<div class="single_address">
-							<div class="address_br"><span class="ti-location-pin"></span></div>
-							<h4>Address</h4>
-							<p>3481 Melrose Place, <br />Beverly Hills</p>
-						</div>							
-						<div class="single_address">
-							<div class="address_br"><span class="ti-mobile"></span></div>
-							<h4>Phone</h4>
-							<p>+512 513 96324</p>
-						</div>	
-						<div class="single_address">
-							<div class="address_br"><span class="ti-email"></span></div>
-							<h4>Email</h4>
-							<p>example@example.com</p>
-						</div>
-						<div class="single_address">
-							<div class="address_br"><span class="ti-location-pin"></span></div>
-							<h4>Working Hours</h4>
-							<p>Mon to Sat 9:00am to 5:00pm</p>
-						</div>
-					</div>
-				</div><!-- END COL  -->					
+				</div>
+
+				<script>
+					// Initialize EmailJS with your Public Key
+					(function() {
+						emailjs.init("yiIOxjZUknkIm3AoI"); // Replace with your EmailJS Public Key
+					})();
+
+					document.getElementById("contact-form").addEventListener("submit", function(event) {
+						event.preventDefault();
+
+						// Collect form data
+						var formData = {
+							name: document.getElementById("name").value,
+							email: document.getElementById("email").value,
+							subject: document.getElementById("subject").value,
+							message: document.getElementById("message").value
+						};
+
+						document.getElementById("contact-form").addEventListener("submit", function(event) {
+						event.preventDefault(); // Prevent form from refreshing the page
+
+						emailjs.send("service_3u05ypq", "template_dzmahmt", {
+							name: document.querySelector("input[name='name']").value,
+							email: document.querySelector("input[name='email']").value,
+							subject: document.querySelector("input[name='subject']").value,
+							message: document.querySelector("textarea[name='message']").value,
+						}, "yiIOxjZUknkIm3AoI")
+						.then(function(response) {
+							alert("Message sent successfully!");
+							document.getElementById("contact-form").reset(); // Reset the form
+							console.log("Email sent successfully!", response);
+						})
+						.catch(function(error) {
+							alert("Failed to send message.Please try again.");
+							console.log("EmailJS Error:", error);
+						});
+					});
+
+					});
+				</script>				
 			</div><!-- END ROW -->
 		</div><!-- END CONTAINER -->
 	</section>
+	
+	
 	<!-- END CONTACT -->		
 
-	<div class="map">
+	<!-- <div class="map">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.957183635167!2d-74.00402768559431!3d40.71895904512855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598a1316e7a7%3A0x47bb20eb6074b3f0!2sNew%20Work%20City%20-%20(CLOSED)!5e0!3m2!1sbn!2sbd!4v1600305497356!5m2!1sbn!2sbd" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-	</div>	
+	</div>	 -->
 	
 
 	<!-- START FOOTER -->
@@ -750,14 +842,12 @@
 					<div class="single_footer">
 						<div class="footer_social_profile">
 							<ul>
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">Twitter</a></li>
-								<li><a href="#">Instagram</a></li>
-								<li><a href="#">Pinterest</a></li>	
-								<li><a href="#">Tumblr</a></li>	
+								<li><a href="https://www.linkedin.com/in/manjubashini-j">Linedin</a></li>
+								<li><a href="https://github.com/kiddoGirl">GitHub</a></li>
+								<li><a href="mailto:jacinthsharon53@gmail.com" target="_blank">Gmail</a></li>
 							</ul>
 						</div><!--- END SOCIAL PROFILE -->		
-						<p class="copyright">Copyright &copy; 2021 | All Rights Reserved.</p>
+						<p class="copyright">Copyright &copy; 2025 | All Rights Reserved By Navi Promotions.</p>
 					</div>
 				</div><!--- END COL -->				
 			</div><!--- END ROW -->				
