@@ -104,5 +104,67 @@ Version      : 1.0
 })(jQuery);
 
 
-  
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter");
+    const skillBoxes = document.querySelectorAll(".skill-box");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            const category = this.getAttribute("data-category");
+
+            skillBoxes.forEach(skill => {
+                if (category === "all" || skill.classList.contains(category)) {
+                    skill.style.display = "block";
+                } else {
+                    skill.style.display = "none";
+                }
+            });
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    function setupFilter(sectionId, filterClass, itemClass) {
+        const filters = document.querySelectorAll(`#${sectionId} .${filterClass}`);
+        const items = document.querySelectorAll(`#${sectionId} .${itemClass}`);
+
+        function showAllItems() {
+            items.forEach(item => item.style.display = "block");
+        }
+
+        // Show all items by default when the page loads
+        showAllItems();
+
+        filters.forEach(filter => {
+            filter.addEventListener("click", function () {
+                filters.forEach(f => f.classList.remove("active"));
+                this.classList.add("active");
+
+                const filterValue = this.getAttribute("data-filter");
+
+                if (filterValue === "all") {
+                    showAllItems();
+                } else {
+                    items.forEach(item => {
+                        if (item.classList.contains(filterValue.substring(1))) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                }
+            });
+        });
+    }
+
+    // Separate functions for each section
+    setupFilter("service", "filter", "mix"); // My Skills Section
+    setupFilter("tech-stack", "techstack-filter", "mix"); // Tech Stack Section
+});
+
+
 
