@@ -166,17 +166,26 @@ document.addEventListener("DOMContentLoaded", function () {
     setupFilter("tech-stack", "techstack-filter", "mix"); // Tech Stack Section
 });
 
-function openModal(imageSrc, title, url) {
-	document.getElementById('modalImage').src = imageSrc;
-	document.getElementById('modalTitle').innerText = title;
-	document.getElementById('modalDescription').innerText = title; // Description same as title
-	document.getElementById('viewFullImage').href = imageSrc; // Link to full image
-	document.getElementById('externalLink').href = url; // External website link
-	document.getElementById('imageModal').style.display = "block";
+function openModal(imageSrc, title, description, githubURL, liveDemoURL, event) {
+    if (event) {
+        event.preventDefault(); // Prevents the page from moving up
+    }
+    
+    document.getElementById("modalImage").src = imageSrc;
+    document.getElementById("modalTitle").innerText = title;
+    document.getElementById("modalDescription").innerText = description;
+    
+    // Update GitHub and Live Demo Links
+    document.getElementById("githubLink").href = githubURL;
+    document.getElementById("liveDemoLink").href = liveDemoURL;
+    
+    // Display modal without affecting page scroll
+    document.getElementById("imageModal").style.display = "flex";
 }
 
 function closeModal() {
-	document.getElementById('imageModal').style.display = "none";
+    document.getElementById("imageModal").style.display = "none";
 }
+
 
 
