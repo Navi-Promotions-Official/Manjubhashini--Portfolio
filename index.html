@@ -364,17 +364,42 @@
 					</div>
 				</div> -->
 				<!--END COL -->				
-				<div class="col-xs-12 col-sm-6 col-lg-4 mix print marketing">		
+				<!-- Portfolio Box -->
+				<div class="col-xs-12 col-sm-6 col-lg-4 ">
 					<div class="box">
-						<img src="assets/img/portfolio/1.jpg" alt="">
+						<img src="assets/img/portfolio/1.jpg" alt="Responsive Education Website">
 						<div class="box-content">
-							<h3 class="title">responsive education website</h3>
+							<h3 class="title">Responsive Education Website</h3>
 						</div>
 						<ul class="icon">
-							<li><a href="assets/img/portfolio/1.jpg" class="port-icon lightbox" data-gall="gall-work"><i class="fa fa-eye"></i></a></li>
+							<li>
+								<a href="#" class="port-icon" onclick="openModal('assets/img/portfolio/1.jpg', 'Responsive Education Website', 'https://example.com')">
+									<i class="fa fa-eye"></i>
+								</a>
+							</li>
 						</ul>
 					</div>
-				</div><!--- END COL -->
+				</div>
+				
+				<!-- Popup Modal -->
+				<div id="imageModal" class="modal">
+					<div class="modal-content">
+						<span class="close" onclick="closeModal()">&times;</span>
+						<h2 id="modalTitle"></h2> <!-- Title -->
+						<img id="modalImage" src="" alt="">
+						<p id="modalDescription"></p> <!-- Description -->
+						<div class="modal-icons">
+							<a id="viewFullImage" href="#" target="_blank">
+								<i class="fa fa-external-link"></i> View Full Image
+							</a>
+							<a id="externalLink" href="#" target="_blank">
+								<i class="fa fa-link"></i> Visit Website
+							</a>
+						</div>
+					</div>
+				</div>
+			
+				<!--- END COL -->
 				<div class="col-xs-12 col-sm-6 col-lg-4 mix web">		
 					<div class="box">
 						<img src="assets/img/portfolio/2.jpg" alt="">

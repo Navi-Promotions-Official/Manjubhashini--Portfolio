@@ -166,5 +166,17 @@ document.addEventListener("DOMContentLoaded", function () {
     setupFilter("tech-stack", "techstack-filter", "mix"); // Tech Stack Section
 });
 
+function openModal(imageSrc, title, url) {
+	document.getElementById('modalImage').src = imageSrc;
+	document.getElementById('modalTitle').innerText = title;
+	document.getElementById('modalDescription').innerText = title; // Description same as title
+	document.getElementById('viewFullImage').href = imageSrc; // Link to full image
+	document.getElementById('externalLink').href = url; // External website link
+	document.getElementById('imageModal').style.display = "block";
+}
+
+function closeModal() {
+	document.getElementById('imageModal').style.display = "none";
+}
 
 
