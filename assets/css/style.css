@@ -31,7 +31,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
-    background: #191A1C;
+    background: #121212;
     overflow-x: hidden;
     background-size: cover;
     /* background-image: url("/assets/img/manju.jpg"); */
@@ -44,7 +44,6 @@ body {
 
 html,
 body { height: 100%;position:relative;  }
-h1,
 h2,
 h3,
 h4,
@@ -56,6 +55,7 @@ h6 {
   color: #fff;
   font-weight: 400;
 }
+
 a {
 	font-family: 'Jost', sans-serif;
     text-decoration: none;
@@ -64,7 +64,7 @@ a {
     transition: all 0.2s;
 }
 a:hover {
-    color: #fff;
+    color:#3C60D0;
     text-decoration: none;
 }
 a:focus {
@@ -115,7 +115,7 @@ b, strong {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #fff;
+  background:linear-gradient(135deg, #2B4CB3, #5D8FF5);
   opacity: 0.6;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   position: absolute;
@@ -163,7 +163,7 @@ b, strong {
 /*END SECTION TITLE DESIGN*/
 /*START SCROLL TO TOP*/
 .topcontrol {
-background: #f0bb62 none repeat scroll 0 0;
+background: #4C79DB none repeat scroll 0 0;
 border-radius: 30px;
 bottom: 5px;
 -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
@@ -187,8 +187,8 @@ width: 50px;
 .topcontrol {display:none;}
 }
 .topcontrol:hover {
-    background: #fff;
-    color: #1b2032;
+    background: linear-gradient(135deg, #3C60D0, #6AA8FF);
+    color: #fff;
 }
 /*END SCROLL TO TOP*/
 /*START SOCIAL PROFILE CSS*/
@@ -226,7 +226,7 @@ padding: 0;
 .social_profile{display:none;}
 }
 .social_profile ul li a:hover{
-color:#fff;
+color:#1A5AD7;
 }
 /*END SOCIAL PROFILE CSS*/
 /*
@@ -429,13 +429,18 @@ position:relative;
 .single-basic-info i {
     font-size: 30px;
     margin-bottom: 8px;
-    color: #ffcc00; /* Highlight color */
+    background: linear-gradient(135deg, #2B4CB3, #5D8FF5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 0.3s;
 }
 
 .single-basic-info a:hover i {
-    color: #595bcf; /* Change color on hover */
+    background: linear-gradient(135deg, #3C60D0, #6AA8FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -448,8 +453,19 @@ position:relative;
 * 04. START ABOUT CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
-.about_img{}
-.about_img img{width:100%;}
+.about_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_img img {
+    width: 65%;
+    max-width: 100%;
+    margin-left: 100px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
  @media only screen and (max-width:768px){
 .about_img {margin-bottom:60px;}
  }
@@ -476,8 +492,8 @@ position:relative;
 }
 
 .resume-btn .btn {
-    background-color: #4e36b9;
-    color: #fff;
+    background: linear-gradient(135deg, #2B4CB3, #5D8FF5);
+    color: white;
     padding: 10px 20px;
     font-size: 16px;
     text-decoration: none;
@@ -486,7 +502,8 @@ position:relative;
 }
 
 .resume-btn .btn:hover {
-    background-color: #4e36b9;
+    background: linear-gradient(135deg, #3C60D0, #6AA8FF);
+
 }
 
 /*START SKILL DESIGN */
@@ -508,7 +525,7 @@ position:relative;
 	width: 100%;
 }
 .progress-bar > span {
-    background: #f0bb62 none repeat scroll 0 0;
+    background: #4C79DB none repeat scroll 0 0;
     display: block;
     height: 100%;
     width: 0;
@@ -552,7 +569,9 @@ border-right:0px;
 .sblr{border-right: 0px;border-left: 0px;}
 }
 .service-icon i {
-	color: #f0bb62;
+    background: linear-gradient(135deg, #2B4CB3, #5D8FF5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 	display: inline-block;
 	font-size:50px;
 	margin-bottom: 25px;
@@ -563,7 +582,9 @@ border-right:0px;
 .serviceBox:hover .service-icon{
     -webkit-animation: 0.3s ease 0s normal forwards 1 running loading;
             animation: 0.3s ease 0s normal forwards 1 running loading;
-	color: #f0bb62;
+     background: linear-gradient(135deg, #3C60D0, #6AA8FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 }
 .serviceBox .title {
 	font-size: 20px;
@@ -630,7 +651,7 @@ border-right:0px;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #ffffff;
+    color: #E1E1E1;
 }
 
 /* Filter Menu */
@@ -645,7 +666,7 @@ border-right:0px;
 }
 
 .techstack-filter-menu li {
-    background: #ff914d;
+    background:linear-gradient(135deg, #2B4CB3, #5D8FF5);
     color: #ffffff;
     padding: 10px 20px;
     cursor: pointer;
@@ -656,7 +677,7 @@ border-right:0px;
 
 .techstack-filter-menu li:hover,
 .techstack-filter-menu .active {
-    background: #d4703a;
+    background: linear-gradient(135deg, #3C60D0, #6AA8FF);
 }
 
 /* Tech Stack Grid */
@@ -800,7 +821,7 @@ position:relative;
 	border-right: 0px;
 }
 .portfolio_filter .active {
-	color: #f0bb62;
+	color: #4C79DB;
 	opacity: 1;
 }
 .box{
@@ -910,8 +931,8 @@ position:relative;
 }
  .box .icon li a:hover{
      color: #fff;
-     background:#f0bb62;
-	 border: 2px solid #f0bb62;
+     background: linear-gradient(135deg, #3C60D0, #6AA8FF);
+	 border: 2px solid #1A5AD7;
  }
  @media only screen and (max-width:990px){
      .box{ margin: 0 0 30px; }
@@ -945,7 +966,11 @@ position:relative;
     position: relative;
     color: white; /* White text for better visibility */
 }
-
+.modal-title{
+    margin-top: 25px;
+    color:#4C79DB;
+    font-weight: bold;
+}
 .modal-content img {
     width: 85%;
     height: auto;
@@ -978,16 +1003,15 @@ position:relative;
     position: absolute;
     right: 20px;
     top: 20px;
-    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    background:linear-gradient(135deg, #2B4CB3, #5D8FF5); /* Light transparent background */
     padding: 5px 10px;
     border-radius: 5px;
     transition: 0.3s ease;
 }
 
 .close:hover {
-    background: rgba(255, 255, 255, 0.5); /* Slightly more visible on hover */
-    color: black;
-}
+    background: linear-gradient(135deg, #3C60D0, #6AA8FF); /* Slightly more visible on hover */
+    color: #fff;}
 
 
 
@@ -1022,21 +1046,21 @@ width: 600px;
 }
 .about_project_details ul li { padding: 5px 0 }
 .about_project_details ul li i {
-    color: #f0bb62;
+    color: #4C79DB;
     margin-right: 10px;
 }
 .about_project_details ul li a {
-    color: #f0bb62;
+    color: #4C79DB;
     font-weight: 700;
 }
 .about_project_details ul li a:hover {text-decoration: underline;}
 .sp_btn {
 	border-bottom: 1px solid #fff;
-	color: #fff;
+	color: #6AA8FF;
 	padding-bottom: 4px;
 	transition: 0.3s;
 }
-.sp_btn:hover{color: #f0bb62;}
+.sp_btn:hover{color: #6AA8FF;}
 /*END PORTFOLIO SINGLE PAGE DESIGN*/
 /*
 * ----------------------------------------------------------------------------------------
@@ -1094,7 +1118,14 @@ width: 600px;
 /* Hover Effect */
 .resume-card:hover {
     transform: translateY(-5px); /* Subtle lift effect */
-    box-shadow: 0px 6px 25px rgba(96, 52, 192, 0.7);
+    box-shadow: 0px 6px 25px #3C60D0;
+    
+    
+}
+
+.resume-card1:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0px 6px 25px #3C60D0;
 }
 
 /* Timeline Title */
@@ -1112,7 +1143,7 @@ width: 600px;
     content: "";
     width: 120px;
     height: 3px;
-    background: linear-gradient(90deg, #ffcc00, transparent);
+    background: linear-gradient(90deg, #2B4CB3, transparent);
     display: block;
     position: absolute;
     bottom: 0;
@@ -1146,14 +1177,14 @@ width: 600px;
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 8px;
-    color: #ffcc00; /* Highlight color */
+    color: #9AA8C7; /* Highlight color */
 }
 
 /* Active Year */
 .active_year {
     color: #fff;
     font-weight: 500;
-    border: 2px solid #595bcf;
+    border: 2px solid #3C60D0;
     padding: 4px 12px;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.1);
@@ -1352,7 +1383,7 @@ font-size: 14px;
 	transition: 0.3s;
 }
 .single-team .team-content .social li a:hover {
-color: #fff;
+color:#3C60D0;
 }
 .single-team:hover:before {
   opacity: 0.7;
@@ -1364,9 +1395,9 @@ color: #fff;
   visibility: visible;
 }
 
-.facebook{background:#5984DF;}
-.twitter{background:#1A90D9;}
-.instagram{background:#FF5252;}
+.facebook{background:#3C60D0;}
+.twitter{background:#3C60D0;}
+.instagram{background:#3C60D0;}
 /*
 * ----------------------------------------------------------------------------------------
 * 09.END TEAM DESIGN
@@ -1400,7 +1431,7 @@ color: #fff;
 	position: absolute;
 	left: 8%;
 	top: 80%;
-	background: #f0bb62;
+	background: #2B4CB3;
 	padding: 6px 15px;
 	border-radius: 4px;
 	color: #fff;
@@ -1423,7 +1454,7 @@ color: #fff;
 	font-weight: 600;
 }
 .single_blog p{margin-bottom:20px;}
-.single_blog h2 a:hover{color:#f0bb62;}
+.single_blog h2 a:hover{color:#2B4CB3;}
 .single_blog span {
 	text-transform: capitalize;
 	margin-bottom: 15px;
@@ -1441,16 +1472,16 @@ color: #fff;
 	font-size: 12px;
 }
 }
-.single_blog span a{color:#f0bb62;}
+.single_blog span a{color:#4C79DB;}
 .single_blog > a{margin-bottom: 30px;}
 .blog_content a {
-	color: #f0bb62;
+	color: #4C79DB;
 	font-weight: 500;
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
 }
-.blog_content a:hover{color:#fff;}
+.blog_content a:hover{color:#2B4CB3;}
 /*START SINGLE PAGE BLOG STYLE*/
 .single_blog_area{}
 .single_blog_page{}
@@ -1512,7 +1543,7 @@ margin-bottom:40px;
 	margin-bottom:30px;
 }
 .contact input:focus {
-	border: 1px solid #f0bb62;
+	border: 1px solid #2B4CB3;
     -webkit-box-shadow: none;
             box-shadow: none;
     outline: 0 none;
@@ -1520,7 +1551,7 @@ margin-bottom:40px;
 	background:none;
 }
 .contact textarea:focus {
-border: 1px solid #f0bb62;
+border: 1px solid #2B4CB3;
     -webkit-box-shadow: none;
             box-shadow: none;
 	color: #fff;
@@ -1554,7 +1585,7 @@ border: 1px solid #f0bb62;
 float:left;
 }
 .single_address span {
-	color: #f0bb62;
+	color: #4C79DB;
 	font-size: 30px;
 	margin-bottom: 20px;
 	display: block;
@@ -1576,7 +1607,7 @@ float:left;
 	-o-transition: 0.3s;
 	transition: 0.3s;
 }
-.contact_btn:hover{background:#f0bb62;color: #fff;}
+.contact_btn:hover{background:#2B4CB3;color: #fff;}
 
 
 .map{}
@@ -1637,7 +1668,7 @@ width: 100%;
 @media only screen and (max-width:768px) { 
 .footer_social_profile ul li a{padding: 10px 25px;}
 }
-.footer_social_profile ul li a:hover{background:#fff;color:#333;}
+.footer_social_profile ul li a:hover{background:#4C79DB;color:#fff;}
 /*END FOOTER SOCIAL DESIGN*/
 .copyright{
 text-transform: capitalize;
