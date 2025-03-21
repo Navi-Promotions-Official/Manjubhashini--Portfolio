@@ -249,6 +249,7 @@
 						<li class="techstack-filter" data-filter=".tech-database">Database</li>
 						<li class="techstack-filter" data-filter=".tech-programming">Languages</li>
 						<li class="techstack-filter" data-filter=".tech-data-science">Data Science</li>
+						<li class="techstack-filter" data-filter=".tech-hosting">Hosting</li>
 						<li class="techstack-filter" data-filter=".tech-version-control">Version Control</li>
 						<li class="techstack-filter" data-filter=".tech-testing">Testing</li>
 						<li class="techstack-filter" data-filter=".tech-design">Design & PM</li>
@@ -274,6 +275,9 @@
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-frontend">
 					<div class="service-icon1"><img src="assets/img/React.svg" alt="React.js" width="150" height="50"></div>
 				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-frontend">
+					<div class="service-icon1"><img src="assets/img/Bootstrap.svg" alt="Bootstrap" width="150" height="50"></div>
+				</div>
 			
 				<!-- Backend Development -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-backend">
@@ -297,6 +301,9 @@
 				<!-- Programming Languages -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-programming">
 					<div class="service-icon1"><img src="assets/img/Python.svg" alt="Python" width="150" height="50"></div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-programming">
+					<div class="service-icon1"><img src="assets/img/Php.svg" alt="Php" width="150" height="50"></div>
 				</div>
 			
 				<!-- Data Science & Analytics -->
@@ -329,9 +336,6 @@
 				<!-- Design & Project Management -->
 				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-design">
 					<div class="service-icon1"><img src="assets/img/canva.jpg" alt="Canva" width="150" height="50"></div>
-				</div>
-				<div class="col-lg-4 col-sm-6 col-xs-12 no-padding mix tech-design">
-					<div class="service-icon1"><img src="assets/img/agile.svg" alt="Agile Methodology" width="150" height="50"></div>
 				</div>
 			
 			</div>
@@ -836,7 +840,7 @@
 						document.getElementById("contact-form").addEventListener("submit", function(event) {
 						event.preventDefault(); // Prevent form from refreshing the page
 
-						emailjs.send("service_3u05ypq", "template_dzmahmt", {
+						emailjs.send("service_ex9r96o", "template_bsbkwi9", {
 							name: document.querySelector("input[name='name']").value,
 							email: document.querySelector("input[name='email']").value,
 							subject: document.querySelector("input[name='subject']").value,
