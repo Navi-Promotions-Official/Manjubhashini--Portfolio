@@ -1599,15 +1599,21 @@ float:left;
 }
 .single_address p{overflow: hidden;}
 .contact_btn {
-	background: #222427;
-	padding: 10px;
-	color: #fff;
-	text-transform: capitalize;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
+    background: linear-gradient(135deg, #2B4CB3, #5D8FF5);
+    padding: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
 }
-.contact_btn:hover{background:#2B4CB3;color: #fff;}
+
+.contact_btn:hover {
+    background: linear-gradient(135deg, #3C60D0, #6AA8FF);
+    color: #fff;
+}
+
 
 
 .map{}
@@ -1653,6 +1659,7 @@ display: inline-block;
 }
 .footer_social_profile ul li a{
 color: #fff;
+background:linear-gradient(135deg, #2B4CB3, #5D8FF5);
 float: left;
 font-size: 12px;
 font-weight: 700;
@@ -1666,9 +1673,11 @@ transition: all 0.3s ease 0s;
 width: 100%;
 }
 @media only screen and (max-width:768px) { 
-.footer_social_profile ul li a{padding: 10px 25px;}
+.footer_social_profile ul li a{
+    padding: 10px 25px;    
 }
-.footer_social_profile ul li a:hover{background:#4C79DB;color:#fff;}
+}
+.footer_social_profile ul li a:hover{ background: linear-gradient(135deg, #3C60D0, #6AA8FF);color:#fff;}
 /*END FOOTER SOCIAL DESIGN*/
 .copyright{
 text-transform: capitalize;
